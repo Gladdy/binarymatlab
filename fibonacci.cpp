@@ -9,18 +9,18 @@ int main(int argc, char* argv[])
 	// Convert the char* argument to an integer
 	int amount = atoi(argv[1]);
 
-	long a = 1;
-	long b = 0;
+	long current = 1;
+	long previous = 0;
 
 	for (int i = 0; i < amount - 1; i++) {
-		std::cout << a << "\t";
+		std::cout << current << "\t";
 
-		long t = a + b;
+		//Compute the next fibonacci number
+		long next = previous + current;
 
-		if (t < 0) { return 0; }
-
-		b = a;
-		a = t;
+		//Set the variables for the next iteration
+		previous = current;
+		current = next;
 	}
 
 	return 0;
