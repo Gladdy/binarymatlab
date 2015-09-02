@@ -1,0 +1,7 @@
+build/*
+fibonacci
+*.zip
+*.sublime-project
+*.sublime-workspace
+*.out
+*.exe
