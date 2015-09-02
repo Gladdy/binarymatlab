@@ -15,7 +15,7 @@ Computing the fibonacci numbers using C++ and using MATLAB to plot them:
 ```MATLAB
 % Example MATLAB program for visualizing the first 20 fibonacci numbers
 amount = 20;
-fibnumbers = runexec('fibonacci', num2str(amount));
+fibnumbers = runexec('fibonacci', {num2str(amount)});
 plot(1:length(fibnumbers),fibnumbers)
 ```
 
