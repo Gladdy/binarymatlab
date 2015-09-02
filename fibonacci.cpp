@@ -9,8 +9,7 @@ int main(int argc, char* argv[])
 	// Convert the char* argument to an integer
 	int amount = atoi(argv[1]);
 
-	long current = 1;
-	long previous = 0;
+	long current = 1;	long previous = 0;
 
 	for (int i = 0; i < amount - 1; i++) {
 		std::cout << current << "\t";
